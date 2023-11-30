@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/796f78da33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-----Navbar----->
+    <div class="container">
+        <nav>
+            <img src="images/logo4.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <!----End Navbar---->
+
+
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/livingroom.png">
+                <div class="layer">
+                    <h3>E-Reservation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/lib5.png">
+                <div class="layer">
+                    <h3>E-Library</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/code4.png">
+                <div class="layer">
+                    <h3>Dotnet Web API</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="work-list">
+            <div class="work">
+                <img src="images/notes.png">
+                <div class="layer">
+                    <h3>Notes Web App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/store.png">
+                <div class="layer">
+                    <h3>My E-Store</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/shopping.png">
+                <div class="layer">
+                    <h3>E-Shopping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, temporibus aliquid,
+                        itaque, error corrupti amet molestias ut modi earum aspernatur! Inventore dicta possimus animi
+                        ullam iure in hic magnam.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-----Testimonials----->
+    <div id="testimonials">
+        <div class="container">
+            <h1 class="sub-title">Testimonials</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person3.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h3>Zablon Mwenya</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quisquam deleniti autem
+                        temporibus cupiditate doloremque labore laborum. Error illum facere numquam nisi amet nemo non!
+                        Eligendi dolores ducimus velit optio!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h3>Abigael Nangulu</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quisquam deleniti autem
+                        temporibus cupiditate doloremque labore laborum. Error illum facere numquam nisi amet nemo non!
+                        Eligendi dolores ducimus velit optio!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----End Testimonials---->
+
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Otieno Brian</p>
+    </div>
+
+
+    <!----Script---->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!----Script---->
+
+</body>
+
+</html>
