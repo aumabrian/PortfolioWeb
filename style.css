@@ -369,6 +369,39 @@ form .btn2{
     color: #ff004f;
 }
 
+/*----------Testimonials---------*/
+#testimonials{
+    padding: 30px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 30%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about-col-2 h3{
+    color: #b54769;
+}
 
 /*---------CSS for Small Screens----------*/
 nav .fa-solid{
